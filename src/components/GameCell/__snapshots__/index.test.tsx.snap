@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameCell should render without errors and match snapshot 1`] = `
+<div
+  class="game-cell"
+  data-value="2"
+  data-x="0"
+  data-y="0"
+  data-z="0"
+>
+  <div
+    class="game-cell game-cell--inner"
+    data-value="2"
+    data-x="0"
+    data-y="0"
+    data-z="0"
+  >
+    <span>
+      2
+    </span>
+  </div>
+</div>
+`;

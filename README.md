@@ -1,25 +1,42 @@
-# Getting Started with Create React App
+# Hexagonal 2048
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hexagonal version of the popular 2048 game. This game has has different levels, as the player can choose the number of hexagons to display. The game ends when the user wins (i.e. a hexagon cell has a value of 2048) or when there are no more possible moves.
+
+![hex-2048-game](https://user-images.githubusercontent.com/43031902/152609915-1c64e5f4-ee85-4b6f-adc4-81cf11691bb3.png)
+
+
+## How to Play
+Move the numbers in the hexagon cells towards one of the 6 possible directions, by pressing the corresponding keyboard keys (see the table below). The player should match adjacent cells with the same value, so their value in summed and merged into one cell (e.g. 2 2 -> 4). The player wins when a cell has 2048 as a value. These are the available command keys:
+
+| Direction                 | Keyboard key |
+| ------------------------- | :----------: |
+| north (top)               |      w       |
+| north-east (top-right)    |      e       |
+| north-west (top-left)     |      q       |
+| south (bottom)            |      s       |
+| south-east (bottom-right) |      d       |
+| south-west (bottom-left)  |      a       |
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test:unit`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the unit test runner in the interactive watch mode.
+### `yarn test-coverage:unit`
 
-### `npm run build`
+Launches the unit test runner in the interactive watch mode and shows tets coverage report.
+
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,42 +46,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

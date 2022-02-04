@@ -1,0 +1,33 @@
+@import '../../styles/settings';
+
+.game-instructions {
+  font-size: 90%;
+  &__directions {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 20rem;
+    margin-top: 1rem;
+
+    h5 {
+      margin-bottom: 0.5rem;
+    }
+
+    h5:nth-child(2) {
+      text-align: center;
+    }
+
+    kbd {
+      text-align: center;
+      font-size: 125%;
+    }
+
+    p {
+    }
+
+    p,
+    kbd {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid $color-grey;
+    }
+  }
+}

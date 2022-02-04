@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameBoard should render without errors and match snapshot 1`] = `
+<div
+  class="game-board"
+  data-testid="game-board"
+>
+  <div
+    class="game-board__header"
+  >
+    <span>
+      Status: 
+      <span
+        data-status="playing"
+      >
+        playing
+      </span>
+    </span>
+    <span>
+      Score: 
+      <span>
+        0
+      </span>
+    </span>
+    <span
+      class="game-board__radius"
+    >
+      <label
+        for="radius"
+      >
+        Radius 
+        <span>
+          2
+        </span>
+      </label>
+      <input
+        id="radius"
+        max="4"
+        min="2"
+        required=""
+        type="range"
+        value="2"
+      />
+    </span>
+    <button>
+      reset
+    </button>
+  </div>
+  <details
+    class="game-board__instructions"
+  >
+    <summary
+      class="game-board__instructions-title"
+    >
+      How to play?
+    </summary>
+    <div
+      class="game-instructions"
+    >
+      <p>
+        Move the numbers in the hexagon cells towards one of the 6 possible directions, by pressing the corresponding keyboard keys. The player should match adjacent cells with the same value, so their value in summed and merged into one cell (e.g. 2 2 -&gt; 4).  The player wins when a cell is 2048.
+      </p>
+      <div
+        class="game-instructions__directions"
+      >
+        <h5>
+          Direction
+        </h5>
+        <h5>
+          Key
+        </h5>
+        <p>
+          North (top)
+        </p>
+        <kbd>
+          W
+        </kbd>
+        <p>
+          North-East (top-right)
+        </p>
+        <kbd>
+          E
+        </kbd>
+        <p>
+          North-West (top-left)
+        </p>
+        <kbd>
+          Q
+        </kbd>
+        <p>
+          South (bottom)
+        </p>
+        <kbd>
+          S
+        </kbd>
+        <p>
+          South-East (bottom-right)
+        </p>
+        <kbd>
+          D
+        </kbd>
+        <p>
+          South-West (bottom-left)
+        </p>
+        <kbd>
+          A
+        </kbd>
+      </div>
+    </div>
+  </details>
+  <div
+    class="game-board__main"
+  >
+    <div
+      class="game-board__playground"
+    >
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="0"
+        data-y="0"
+        data-z="0"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: 7.5; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="0"
+          data-y="0"
+          data-z="0"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: 7.5; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="1"
+        data-y="0"
+        data-z="-1"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 17.5; --top: 3.1698729810778072; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="1"
+          data-y="0"
+          data-z="-1"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 17.5; --top: 3.1698729810778072; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="1"
+        data-y="-1"
+        data-z="0"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 17.5; --top: 11.830127018922193; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="1"
+          data-y="-1"
+          data-z="0"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 17.5; --top: 11.830127018922193; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="0"
+        data-y="-1"
+        data-z="1"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: 16.160254037844386; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="0"
+          data-y="-1"
+          data-z="1"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: 16.160254037844386; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="-1"
+        data-y="0"
+        data-z="1"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 2.5; --top: 11.830127018922193; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="-1"
+          data-y="0"
+          data-z="1"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 2.5; --top: 11.830127018922193; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="-1"
+        data-y="1"
+        data-z="0"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 2.5; --top: 3.1698729810778072; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="-1"
+          data-y="1"
+          data-z="0"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 2.5; --top: 3.1698729810778072; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+      <div
+        class="game-cell"
+        data-value="0"
+        data-x="0"
+        data-y="1"
+        data-z="-1"
+        style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: -1.1602540378443855; --background-color: #FFFFFF; --color: #555555;"
+      >
+        <div
+          class="game-cell game-cell--inner"
+          data-value="0"
+          data-x="0"
+          data-y="1"
+          data-z="-1"
+          style="--hexagon-size: 5; --triangle-base: 8.660254037844386; --triangle-height: 2.5000000000000004; --left: 10; --top: -1.1602540378443855; --background-color: #FFFFFF; --color: #555555;"
+        />
+      </div>
+    </div>
+    <div
+      class="game-board__instructions game-board__instructions--desktop"
+    >
+      <p
+        class="game-board__instructions-title"
+      >
+        How to play?
+      </p>
+      <div
+        class="game-instructions"
+      >
+        <p>
+          Move the numbers in the hexagon cells towards one of the 6 possible directions, by pressing the corresponding keyboard keys. The player should match adjacent cells with the same value, so their value in summed and merged into one cell (e.g. 2 2 -&gt; 4).  The player wins when a cell is 2048.
+        </p>
+        <div
+          class="game-instructions__directions"
+        >
+          <h5>
+            Direction
+          </h5>
+          <h5>
+            Key
+          </h5>
+          <p>
+            North (top)
+          </p>
+          <kbd>
+            W
+          </kbd>
+          <p>
+            North-East (top-right)
+          </p>
+          <kbd>
+            E
+          </kbd>
+          <p>
+            North-West (top-left)
+          </p>
+          <kbd>
+            Q
+          </kbd>
+          <p>
+            South (bottom)
+          </p>
+          <kbd>
+            S
+          </kbd>
+          <p>
+            South-East (bottom-right)
+          </p>
+          <kbd>
+            D
+          </kbd>
+          <p>
+            South-West (bottom-left)
+          </p>
+          <kbd>
+            A
+          </kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
