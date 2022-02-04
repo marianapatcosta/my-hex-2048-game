@@ -1,0 +1,82 @@
+@import '../../styles/settings';
+
+.game-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-secondary;
+  position: absolute;
+  top: calc(var(--top) * 1rem);
+  left: calc(var(--left) * 1rem);
+  width: calc(var(--triangle-base) * 1rem);
+  height: calc(var(--hexagon-size) * 2rem);
+  /*height: calc(var(--hexagon-size) * 1rem);
+     */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  /*&:;
+     before,&:after ;
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: calc(var(--triangle-base) * 0.5rem) solid transparent;
+    border-right: calc(var(--triangle-base) * 0.5rem) solid transparent;
+  }
+
+  &:before {
+    bottom: 99%;
+    border-bottom: calc(var(--triangle-height) * 1rem) solid $color-secondary;
+  }
+
+  &:after {
+    top: 99%;
+    width: 0;
+    border-top: calc(var(--triangle-height) * 1rem) solid $color-secondary;
+    z-index: -1;
+  } */
+
+  &--inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    background-color: var(--background-color);
+    color: var(--color);
+
+    /*&:before ;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-animation: emerge 0.5s ease-in-out;
+{
+      border-bottom: calc(var(--triangle-height) * 1rem) solid $color-light-grey;
+    }
+
+    &:after {
+      border-top: calc(var(--triangle-height) * 1rem) solid $color-light-grey;
+    } */
+  }
+
+  span {
+    font-size: 150%;
+    font-weight: 700;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+  }
+}

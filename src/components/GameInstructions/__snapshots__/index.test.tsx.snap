@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameInstructions should render without errors and match snapshot 1`] = `
+<div
+  class="game-instructions"
+>
+  <p>
+    Move the numbers in the hexagon cells towards one of the 6 possible directions, by pressing the corresponding keyboard keys. The player should match adjacent cells with the same value, so their value in summed and merged into one cell (e.g. 2 2 -&gt; 4).  The player wins when a cell is 2048.
+  </p>
+  <div
+    class="game-instructions__directions"
+  >
+    <h5>
+      Direction
+    </h5>
+    <h5>
+      Key
+    </h5>
+    <p>
+      North (top)
+    </p>
+    <kbd>
+      W
+    </kbd>
+    <p>
+      North-East (top-right)
+    </p>
+    <kbd>
+      E
+    </kbd>
+    <p>
+      North-West (top-left)
+    </p>
+    <kbd>
+      Q
+    </kbd>
+    <p>
+      South (bottom)
+    </p>
+    <kbd>
+      S
+    </kbd>
+    <p>
+      South-East (bottom-right)
+    </p>
+    <kbd>
+      D
+    </kbd>
+    <p>
+      South-West (bottom-left)
+    </p>
+    <kbd>
+      A
+    </kbd>
+  </div>
+</div>
+`;

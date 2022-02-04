@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without errors and match snapshot 1`] = `
+<header>
+  <h2>
+    Hex 
+    <img
+      alt="hex 2048 logo"
+      src="/hex-2048-logo.svg"
+    />
+  </h2>
+</header>
+`;

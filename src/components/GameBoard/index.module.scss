@@ -1,0 +1,176 @@
+@import '../../styles/settings';
+
+.game-board {
+  h1 {
+    color: $color-secondary;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+
+    span {
+      color: $color-font;
+    }
+
+    & > span,
+    & > label {
+      color: $color-secondary;
+      font-weight: 700;
+    }
+
+    button {
+      background-color: $color-secondary;
+      color: $color-primary;
+      font-weight: 700;
+      padding: 0.3rem 1rem;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      cursor: pointer;
+      width: min-content;
+      height: min-content;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+
+    input {
+      padding: 0.3rem 0.5rem;
+      width: 4rem;
+      margin-top: 0.3rem;
+      z-index: 2;
+      cursor: pointer;
+
+      &[type='range'] {
+        background-color: $color-secondary;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.5rem;
+        height: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+      }
+
+      &[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none !important;
+        background-color: $color-secondary;
+        box-shadow: 0 0.05rem 0.3rem rgba($color-black, 0.5);
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
+
+  &__radius {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    margin-top: 4rem;
+  }
+
+  &__playground {
+    position: absolute;
+    transform: scale(0.8) translate(50%, 50%);
+    -webkit-transform: scale(0.8) translate(50%, 50%);
+    -moz-transform: scale(0.8) translate(50%, 50%);
+    -ms-transform: scale(0.8) translate(50%, 50%);
+    -o-transform: scale(0.8) translate(50%, 50%);
+  }
+
+  &__instructions {
+    padding: 1rem 0.5rem 1rem 0;
+    position: absolute;
+
+    &--desktop {
+      display: none;
+      padding: 0;
+      position: revert;
+    }
+  }
+
+  details[open] {
+    z-index: 1;
+    background: $color-primary;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  &__instructions-title {
+    font-weight: 700;
+    color: $color-secondary;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: $xs) {
+  .game-board {
+    &__header {
+      column-gap: 1rem;
+      justify-content: revert;
+    }
+
+    &__playground {
+      position: relative;
+      transform: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .game-board {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    &__header {
+      margin: 0 auto 2rem;
+    }
+
+    &__instructions {
+      display: none;
+      &--desktop {
+        display: block;
+        width: 20rem;
+      }
+    }
+
+    &__main {
+      grid-column: span 2;
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: auto auto;
+      gap: 10rem;
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $xl) {
+  .game-board {
+    &__playground {
+      justify-self: center;
+    }
+  }
+}
