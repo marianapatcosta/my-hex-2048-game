@@ -6,7 +6,7 @@ exports[`App should render without errors and match snapshot 1`] = `
     Hex 
     <img
       alt="hex 2048 logo"
-      src="/hex-2048-logo.svg"
+      src="hex-2048-logo.svg"
     />
   </h2>
 </header>
