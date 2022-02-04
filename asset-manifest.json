@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/my-hex-2048-game/static/css/main.c5da1ce2.css",
-    "main.js": "/my-hex-2048-game/static/js/main.737a6be3.js",
+    "main.js": "/my-hex-2048-game/static/js/main.110f6775.js",
+    "static/media/hex-2048-logo.svg": "/my-hex-2048-game/static/media/hex-2048-logo.01b89792e0ff44ca0abd9b136a3eb680.svg",
     "index.html": "/my-hex-2048-game/index.html",
     "main.c5da1ce2.css.map": "/my-hex-2048-game/static/css/main.c5da1ce2.css.map",
-    "main.737a6be3.js.map": "/my-hex-2048-game/static/js/main.737a6be3.js.map"
+    "main.110f6775.js.map": "/my-hex-2048-game/static/js/main.110f6775.js.map"
   },
   "entrypoints": [
     "static/css/main.c5da1ce2.css",
-    "static/js/main.737a6be3.js"
+    "static/js/main.110f6775.js"
   ]
 }
