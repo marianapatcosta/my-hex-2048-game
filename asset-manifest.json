@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-hex-2048-game/static/css/main.c5da1ce2.css",
+    "main.js": "/my-hex-2048-game/static/js/main.737a6be3.js",
+    "index.html": "/my-hex-2048-game/index.html",
+    "main.c5da1ce2.css.map": "/my-hex-2048-game/static/css/main.c5da1ce2.css.map",
+    "main.737a6be3.js.map": "/my-hex-2048-game/static/js/main.737a6be3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5da1ce2.css",
+    "static/js/main.737a6be3.js"
+  ]
+}
