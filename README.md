@@ -1,6 +1,6 @@
 # Hexagonal 2048
 
-Hexagonal version of the popular 2048 game developed with React and TypeScript; includes unit tests. This game has has different levels, as the player can choose the number of hexagons to display. The game ends when the user wins (i.e. a hexagon cell has a value of 2048) or when there are no more possible moves.
+Hexagonal version of the popular 2048 game developed with React, TypeScript and SCSS-modules; includes unit tests. This game has has different levels, as the player can choose the number of hexagons to display. The game ends when the user wins (i.e. a hexagon cell has a value of 2048) or when there are no more possible moves.
 
 ![hex-2048-game](https://user-images.githubusercontent.com/43031902/152609915-1c64e5f4-ee85-4b6f-adc4-81cf11691bb3.png)
 
